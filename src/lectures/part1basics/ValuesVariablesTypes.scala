@@ -8,4 +8,5 @@ object ValuesVariablesTypes extends App {
   var toto= 41
   toto=x
   println(x)
+  var newTest=32
 }
