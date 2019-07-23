@@ -13,7 +13,12 @@ object OOBasics extends App {
   println(aNovel.isWrittenby(aSecondAuthor))
   //var aSecondNovel = new Novel()
   val aSecondNovel = aNovel.copy(2000)
-  println(aSecondNovel)
+  println(aSecondNovel.name)
+
+  val count = new Counter()
+  count.inc.print
+  count.inc.inc.inc.print
+  count.inc(10).print
 }
 
 class Person(name: String, val age: Int=0){
@@ -35,25 +40,39 @@ class Person(name: String, val age: Int=0){
 }
 
 
-class Writer (name: String, surname: String, year: Int=1000)
+class Writer (name: String, surname: String, val year: Int=1000)
 {
-  def fullname () : String = this.name + " " + this.surname
-  def getyear() :Int = this.year
+  def fullname : String = name + " " + surname
 
 }
 
-class Novel(name: String="", release: Int=1000, author: Writer){
-  def authorAge() : Int=this.release - author.getyear()
-  def isWrittenby(author: Writer) : Boolean = if(this.author.equals(author)) true else false
-  def copy(newyear: Int): Novel = new Novel(this.name,newyear,this.author)
+class Novel(val name: String="", release: Int=1000, author: Writer){
+  def authorAge() : Int=release - author.year
+  //def isWrittenby(author: Writer) : Boolean = if(this.author.equals(author)) true else false
+  def isWrittenby(author: Writer) = author == this.author
+  def copy(newyear: Int): Novel = new Novel(name,newyear,author)
 
 }
+// set val before parameter to void creating getters and setters
 
-class Counter(counter:Int){
-  def getCounter(): Int = this.counter
-  def increment(): Counter = new Counter(this.counter + 1)
-  def increment(value: Int): Counter = new Counter(this.counter+value)
-  def decrement(): Counter= new Counter(this.counter-1)
-  def decrement(value: Int) : Counter = new Counter(this.counter-value)
+class Counter(val counter:Int = 0){
+  def inc: Counter = {
+    println("Incrementing")
+    new Counter(counter + 1) // Immutability: when you need to change a value return a new instance
+  }
+  def inc(value: Int): Counter = {
+    if (value <= 0 ) this
+    else inc.inc(value-1)
+  }
+  def dec: Counter= {
+    println("Decrementing")
+    new Counter(counter-1)
+  }
+  def dec(value: Int) : Counter = {
+    if (value <= 0) this
+    else dec.dec(value-1)
+  }
+
+  def print = println(counter)
 }
 
