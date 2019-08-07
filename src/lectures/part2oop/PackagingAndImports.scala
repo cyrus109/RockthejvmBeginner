@@ -27,7 +27,7 @@ val prins = new PrinsCharming
 
   //1 Use FQ name
   val udate = new Date
-  val sqlDate = new sqldata()
+  //val sqlDate = new sqldata()
   //2 use aliasing
 
 

@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6963745-075e-4b34-ae6f-9995a7440b74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/CaseClasses.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/Exceptions.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/OOBasics2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/PackagingAndImports.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/package.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playground/Cinderella.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playground/PrinsCharming.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/part3fp/whatsAFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/exercises/MyList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/MyList.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/Generics.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2oop/Generics.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/PackagingAndImports.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2oop/PackagingAndImports.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,20 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PackagingAndImports">
-    <configuration name="CaseClasses" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.CaseClasses" />
-      <module name="Rock-the-jvm-Beginner" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part2oop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.whatsAFunction">
     <configuration name="Exceptions" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part2oop.Exceptions" />
       <module name="Rock-the-jvm-Beginner" />
@@ -132,13 +111,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="whatsAFunction" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.whatsAFunction" />
+      <module name="Rock-the-jvm-Beginner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part3fp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.whatsAFunction" />
         <item itemvalue="Application.PackagingAndImports" />
         <item itemvalue="Application.OOBasics2" />
         <item itemvalue="Application.OOBasics" />
         <item itemvalue="Application.Exceptions" />
-        <item itemvalue="Application.CaseClasses" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564646029064</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="OOP done">
+      <created>1564688738268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564688738268</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,7 +200,8 @@
     <MESSAGE value="MethodNotations" />
     <MESSAGE value="AbstractsandTraits" />
     <MESSAGE value="Generics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generics" />
+    <MESSAGE value="OOP done" />
+    <option name="LAST_COMMIT_MESSAGE" value="OOP done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Rock_the_jvm_Beginner$OOBasics2.ic" NAME="OOBasics2 Coverage Results" MODIFIED="1564687346296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
