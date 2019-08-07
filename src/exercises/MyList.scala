@@ -36,7 +36,7 @@ case object Empty extends MyList[Nothing]{
   def isEmpty : Boolean = true
   def add[B >: Nothing](element: B) : MyList[B] = new Cons(element, Empty)
   def printElements: String = ""
-  def map[B](transformer: Nothing => B : MyList[B] = Empty
+  def map[B](transformer: Nothing => B) : MyList[B] = Empty
   def FlatMap[B](transformer: Nothing => MyList[B]) : MyList[B] = Empty
   def filter(predicate: Nothing => Boolean): MyList[Nothing] = Empty
   def ++[B >: Nothing](list: MyList[B]) : MyList[B] = list
@@ -66,15 +66,11 @@ object listTree extends App{
   val listofIntegers : MyList[Int] = new Cons(1, new Cons(2, new Cons(3,Empty)))
   val anotherListofIntegers : MyList[Int] = new Cons(4, new Cons(5, Empty))
   val listofStrings : MyList[String] = new Cons("1", new Cons("2", new Cons("3",Empty)))
-  println(listofIntegers.map(new Function[Int,Int] {
-    override def apply(elem: Int) : Int = elem * 2
-  }))
-  println(listofIntegers.filter((elem: Int) => elem % 2 == 0).toString)
+  println(listofIntegers.map(elem => elem * 2))
+  println(listofIntegers.filter(elem => elem % 2 == 0).toString)
 
   println((listofIntegers ++ anotherListofIntegers).toString)
-  println(listofIntegers.FlatMap(new Function[Int, MyList[Int]] {
-    override def apply(elem: Int): MyList[Int] = new Cons (elem, new Cons[Int](elem + 1, Empty))
-  }).toString)
+  println(listofIntegers.FlatMap(elem => new Cons (elem, new Cons(elem + 1, Empty))).toString)
 
 
 }
