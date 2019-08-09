@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6963745-075e-4b34-ae6f-9995a7440b74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lectures/part3fp/AnonymousFunctions.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lectures/part3fp/HofsandCurries.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/part3fp/MapFlatmapFilter.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/part3fp/sequances.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercises/MyList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/MyList.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HofsandCurries">
+  <component name="RunManager" selected="Application.sequances">
     <configuration name="AnonymousFunctions" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part3fp.AnonymousFunctions" />
       <module name="Rock-the-jvm-Beginner" />
@@ -85,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OOBasics2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.OOBasics2" />
+    <configuration name="MapFlatmapFilter" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.MapFlatmapFilter" />
       <module name="Rock-the-jvm-Beginner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.part2oop.*" />
+          <option name="PATTERN" value="lectures.part3fp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PackagingAndImports" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.PackagingAndImports" />
+    <configuration name="sequances" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.sequances" />
       <module name="Rock-the-jvm-Beginner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.part2oop.*" />
+          <option name="PATTERN" value="lectures.part3fp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sequances" />
+        <item itemvalue="Application.MapFlatmapFilter" />
         <item itemvalue="Application.HofsandCurries" />
         <item itemvalue="Application.AnonymousFunctions" />
         <item itemvalue="Application.whatsAFunction" />
-        <item itemvalue="Application.PackagingAndImports" />
-        <item itemvalue="Application.OOBasics2" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565170307533</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="part 3 func programming">
+      <created>1565185178339</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565185178339</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
